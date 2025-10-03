@@ -16,6 +16,7 @@ export const postFile = async (formData) => {
 };
 
 export const getDefaultStats = async () => {
+  console.log(url)
   try {
     const result = await axios.get(url + "/api/v1/dummy");
     return result;
